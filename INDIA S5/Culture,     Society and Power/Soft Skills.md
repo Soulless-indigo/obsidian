@@ -1,0 +1,3 @@
+
+![[self awarness diagram.svg]]
+
