@@ -8,6 +8,8 @@
     - taches
     - équipe
     - planning
+    
+![[3 axe de gestion projet.svg]]
 
 ## Idée du projet:
 
