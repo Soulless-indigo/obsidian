@@ -11,4 +11,3 @@
 	- Menace de sec courante
 	- type d'attack d'un reseau technique general d'attenuation des risques
 	- strategie de sec de l'entreprise
-	
