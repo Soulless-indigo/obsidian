@@ -1,3 +1,5 @@
+![[CoursBigData_INDIA2023_Partie1.pdf]]
+
 ### 1. Big Data:
 - Def:
 	- Big data mégadonnées ou donnee massive designe les ressources d'info:
