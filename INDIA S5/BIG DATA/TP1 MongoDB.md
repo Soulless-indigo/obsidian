@@ -1,5 +1,6 @@
 ![[TP1 BIG DATA.pdf]]
 
+
 Sure, I can help you with these MongoDB-related questions based on the instructions provided:
 
 1. **Afficher les bases de données existantes**
