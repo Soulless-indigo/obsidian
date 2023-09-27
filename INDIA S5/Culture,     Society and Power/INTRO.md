@@ -17,4 +17,11 @@
 	- a complex pattern of norms of interaction that exist among them 
 	- an  intangible entity: it is a mental *construct* , which the membres of the society maintain themselves 
 	- some anthropologists say that society exists only when the membres know each other and possess *common interests*
-	
+### Meaning and Definition of Society:
+- The Roots: the latin word socius which means *companionship* or friendship
+- George Simmel an eminent sociologists has stated that it is the element of *sociability*  or companionship which defines the true essence of society
+- as aristole stated centuries ago man is a *social animal* it brings into focus that man always lives in the company of other people. Society has become an essential condition for human life to continue 
+- some view of *the social thinkers* on society :
+	- August comte viewed society as *a social organism* 
+	- ...
+	- Talcott Parson society is a total complex of human relationships 
