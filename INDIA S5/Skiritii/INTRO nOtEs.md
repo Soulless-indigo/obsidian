@@ -1,0 +1,13 @@
+### Système d'Info
+- Travail à faire :
+	- INTRO:
+		- qu'est que la sécurité
+		- pq les SI sont vunlérables 
+	- Enjeux de sec des SI:
+		-  "" ""
+		- pq la sec est important
+		- Def de sec protection dissuasion
+		- strategie de sec
+	- Menace de sec courante
+	- type d'attack d'un reseau technique general d'attenuation des risques
+	- strategie de sec de l'entreprise
