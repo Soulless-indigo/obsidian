@@ -215,100 +215,59 @@ db.emprunts.aggregate([{$group:{"_id":"$noliv", nbrePret:{$sum:1}}}, {$match:{"n
 
   
 
-17. Lister noliv, et date sortie des livres empruntés
 
-```
-
-  
-
-```
-
-  
-
-18. Sélectionner les livres (codeLivre, et Titre) qui n’ont jamais empruntés.
+17. Lister noliv et date sortie des livres empruntés :
 
 ```JAVASCRIPT
-
-db.livres.aggregate([
-
-  {$lookup:{
-
-    from:"emprunts",
-
-    localField:"codeLivre",
-
-    foreignField:"noliv",
-
-    as:"pret"
-
-  }},
-
-  {$match:{
-
-    pret:{$size:0}
-
-  }},
-
-  {$project:{
-
-    codeLivre:1,
-
-    Titre:1,
-
-    _id:0
-
-  }}
-
-])
-
+db.emprunts.find({datesortie: {$ne: ""}}, {noliv: 1, datesortie: 1, _id: 0})
 ```
 
-  
+19. Lister noliv, titre et date sortie des livres empruntés et non retournés :
 
-19. Lister noliv, titre, et date sortie des livres empruntés
-
+```JAVASCRIPT
+db.emprunts.find({dateretour: ""}, {noliv: 1, datesortie: 1}).forEach(function(emprunt) {
+    var livre = db.livres.findOne({codeLivre: emprunt.noliv}, {Titre: 1});
+    print("noliv: " + emprunt.noliv + ", Titre: " + livre.Titre + ", datesortie: " + emprunt.datesortie);
+})
 ```
 
-  
+20. Trouver noliv, titre des livres empruntés (non retournés), numéro et le nom de leur emprunteur. Cette requête nécessite une opération de jointure entre les collections `emprunts` et `etudiants. Voici une approche pour obtenir ces informations :
 
+```JAVASCRIPT
+db.emprunts.find({dateretour: ""}).forEach(function(emprunt) {
+    var livre = db.livres.findOne({codeLivre: emprunt.noliv}, {Titre: 1});
+    var etudiant = db.etudiants.findOne({noetud: emprunt.noetud}, {nom: 1, prenom: 1});
+    print("noliv: " + emprunt.noliv + ", Titre: " + livre.Titre + ", noetud: " + emprunt.noetud + ", Emprunteur: " + etudiant.nom + " " + etudiant.prenom);
+})
 ```
 
-  
+21. Pour insérer le document dans la collection emprunts, utilisez la commande suivante :
 
-20. Trouver noliv, titre, des livres empruntés (non retourné), numéro et le nom de leur emprunteur.
-
+```JAVASCRIPT
+db.emprunts.insert({
+    noetud: 'E7',
+    noliv: 10,
+    datesortie: '16/02/2023',
+    dateretour: ''
+})
 ```
 
-  
+22. Pour modifier les dates d'emprunt du livre 10, utilisez la commande suivante :
 
+```JAVASCRIPT
+db.emprunts.update(
+    { noliv: 10 },
+    {
+        $set: {
+            datesortie: '17/02/2020',
+            dateretour: '18/02/2020'
+        }
+    }
+)
 ```
 
-  
+23. Pour supprimer les livres de dateretour nulle dans la collection "emprunts", utilisez la commande suivante :
 
-21. Quels sont les noms et prénoms des étudiants qui ont emprunté (et non retourné) un livre après la date du 16/01/2010. Insérer dans la collection emprunts, le document suivant. { noetud: 'E7', noliv: 10, datesortie: '16/02/2023', dateretour: '' },
-
-```
-
-  
-
-```
-
-  
-
-22. Modifier les dates d'emprunt du livre 10 sorti le 16/02/2020 à la date de sortie 17/02/2020 et la date retour 18/02/2020, et vérifier la modification.
-
-```
-
-  
-
-```
-
-  
-
-23. Supprimer dans la collection "emprunts" tous les livres de dateretour est nul, et vérifier la suppression.
-
-```
-
-  
-
+```JAVASCRIPT
+db.emprunts.deleteMany({ dateretour: "" })
 ```
