@@ -125,13 +125,13 @@ db.livres.find({Titre : /^dévelop/}, {"_id":0, "Titre":1, "Auter":1, "PU":1}).l
 
 12. Créer dans la base de données biblio les deux collections « etudiants », et « emprunts »
 
-~~~JAVASCRIPT
+```JAVASCRIPT
 
 db.createCollection('etudiants')
 
 db.createCollection('emprunts')
+```
 
-~~~
 
   
 
@@ -167,7 +167,7 @@ mongoimport -d biblio -c etudiants \*chemin_acces*\DataEtudiant.json --jsonArray
 ```
   
 
-~~~JAVASCRIPT
+```JAVASCRIPT
 
 >db.emprunts.insertMany([
 
@@ -191,7 +191,7 @@ mongoimport -d biblio -c etudiants \*chemin_acces*\DataEtudiant.json --jsonArray
 
 ])
 
- ~~~
+```
 
   
 
