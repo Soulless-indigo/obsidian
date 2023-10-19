@@ -48,8 +48,18 @@ what is IOT?
 	- Participation: 10%
 
 ### Groupe Project:
-		- Yassi
+		- Yassin
 		- Thomas
 		- Me
 		Traceur GPS
-		
+
+
+### Def IOT:
+```
+The IERC definition states that IoT is "A dynamic global     network infrastructure with self-configuring capabilities    based on standard and interoperable communication       protocols where physical and virtual “things” have           identities, physical attributes, and virtual personalities   and use intelligent interfaces, and are seamlessly           integrated into the information network.
+```
+
+	![[Pasted image 20231019150724.png]]
+	![[Pasted image 20231019150902.png]]
+	![[Pasted image 20231019150922.png]]
+	
