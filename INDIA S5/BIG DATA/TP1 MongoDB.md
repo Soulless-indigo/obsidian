@@ -1,7 +1,6 @@
 ![[TP1 BIG DATA.pdf]]
 
 
-Sure, I can help you with these MongoDB-related questions based on the instructions provided:
 
 1. **Afficher les bases de données existantes**
    
@@ -193,5 +192,3 @@ Certainly, here are the answers to the remaining questions:
    ```javascript
    db.livres.find({ "Editeur": { $in: ["Hermann", "Afnor"] } })
    ```
-
-These commands should help you perform the specified tasks in your MongoDB database.
