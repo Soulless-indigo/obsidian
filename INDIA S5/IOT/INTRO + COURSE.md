@@ -62,4 +62,24 @@ The IERC definition states that IoT is "A dynamic global     network infrastruct
 	![[Pasted image 20231019150724.png]]
 	![[Pasted image 20231019150902.png]]
 	![[Pasted image 20231019150922.png]]
-	
+
+### Why IOT ?
+- Evolution naturelle des technologies: lien inévitable entre le monde numérique et le monde physique.
+- Assistance à nos activités professionnelles et personnelles.
+- Permet une réduction considérable des dépenses dans l'économie d'aujourd'hui (industrie, santé, sécurité, etc...)
+- L'IoT évolue rapidement.
+### Objectif de l'IoT:
+- Offrir une connectivité avancée avancee aux equipement systeme et service qui depasse celle des comm M2M
+- Etendre IP aux capteurs et autres objets 
+- Nimport 
+- Donner la parole à des objets silencieux -> Rendre le objets intelligents
+### Evolution du nombre d'objets:
+![[Pasted image 20231019155800.png]]
+
+![[Pasted image 20231019153645.png]]
+(just statistics)
+### Vision de l'IoT:
+![[Pasted image 20231019154236.png]]
+### Internet of Things vs Internet:
+![[Pasted image 20231019155934.png]]
+![[Pasted image 20231019162809.png]]
