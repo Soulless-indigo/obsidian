@@ -1,8 +1,69 @@
 ![[TP2Bigdata_INDIA_2023_2024.pdf]]
+
+### DataEtudiant.json
+```json
+[
+ {
+  "noEtud": "E1",
+  "Nom": "Jaafari",
+  "Prenom": "Said"
+ },
+ {
+  "noEtud": "E2",
+  "Nom": "Alaoui",
+  "Prenom": "Ali"
+ },
+ {
+  "noEtud": "E3",
+  "Nom": "Madih",
+  "Prenom": "Karim"
+ },
+ {
+  "noEtud": "E4",
+  "Nom": "Alaoui",
+  "Prenom": "Nada"
+ },
+ {
+  "noEtud": "E5",
+  "Nom": "Madih",
+  "Prenom": "Fadoua"
+ },
+ {
+  "noEtud": "E6",
+  "Nom": "Sbihi",
+  "Prenom": "Jamal"
+ },
+ {
+  "noEtud": "E7",
+  "Nom": "Alaoui",
+  "Prenom": "Amal"
+ },
+ {
+  "noEtud": "E8",
+  "Nom": "Karimi",
+  "Prenom": "Malak"
+ },
+ {
+  "noEtud": "E9",
+  "Nom": "Saoud",
+  "Prenom": "Badr"
+ },
+ {
+  "noEtud": "E10",
+  "Nom": "Saoud",
+  "Prenom": "Laila"
+ }
+]
+
+
+```
+
 ### Exercice1.
 
-1. Se connecter à MongoDB via le shell : C:\mongosh-1.10.6-win32-x64\bin\mongosh
-
+1. Se connecter à MongoDB via le shell : 
+```c
+C:\mongosh-1.10.6-win32-x64\bin\mongosh
+```
   
 
 2. Afficher les bases de données existantes
